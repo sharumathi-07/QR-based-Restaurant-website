@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="icon" type="image/jpg" href="img/icon.jpg"/>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+    <section id="menu" class="menu-section-one">
+  <div class="menu-header">
+    <h1>Our Menu</h1>
+    <p><em>Delicious dishes, freshly prepared for you!</em></p>
+  </div>
+
+  <div class="menu-poster">
+      <h1 class="big-number">1</h1>
+    <div class="menu-images">
+      <img src="img/menucircleimage8.jpg" alt="Dish 1" class="dish">
+      <img src="img/menucircleimage9.jpg" alt="Dish 2" class="dish">
+    </div>
+      <h1 class="big-symbol">%</h1>
+  </div>
+  <div class="menu-bottom">
+    <p>✔ Authentic ✔ Delicious ✔ Tasty</p>
+  </div>
+</section>
+<section class="menu-section">
+    <h2 class="starter-label">★ Today's special ★</h2>
+    <div class="menu-cards">
+      <div class="card">
+        <img src="img/hyderabad_biryani.jpg">
+        <h3>Kozhikode biryani</h3>
+        <p>Flavorful, filled with panko bread crumbs, pine nuts, parsley, sun-dried tomatoes.</p>
+        <div class="price">₹180</div>
+      </div>
+      <div class="card">
+        <span class="badge">POPULAR</span>
+        <img src="img/brownie.jpg" >
+        <h3>Brownie with Ice Cream</h3>
+        <p>Warm, fudgy brownie topped with a scoop of vanilla ice cream.</p>
+        <div class="price">₹100</div>
+      </div>
+      <div class="card">
+        <img src="img/burger.jpg" >
+        <h3>Classic Veg Burger</h3>
+        <p>A crispy veg patty layered with fresh veggies & cheese in a soft bun.</p>
+        <div class="price">₹120</div>
+      </div>
+    </div>
+</section>
+<section class="menu-section">
+ 
+  <div class="menu-box">
+    <h2>Chef's Special</h2>
+      <div class="menu-container">
+        <div class="menu-items">
+          <div class="spl-item" data-price="120">
+            <img src="img/stuffed_mushroom.jpg" alt="Stuffed Mushrooms">
+            <div class="item-info">
+              <h3>Stuffed Mushroom - ₹120</h3>
+              <p>Juicy mushrooms filled with creamy, spiced stuffing.</p>
+            </div>
+            <div class="cart-controls1">
+            <button class="minus">-</button>
+            <input type="text" value="0" class="quantity" readonly>
+            <button class="plus">+</button>
+            </div>
+          </div>
+
+          <div class="spl-item" data-price="140">
+            <img src="img/lamb_chops.jpg">
+            <div class="item-info">
+              <h3>Grilled Lamb Chops with Mint Sauce - ₹140 </h3>
+              <p>Tender lamb chops grilled to perfection, served with minty freshness. 
+            </div>
+            <div class="cart-controls1">
+            <button class="minus">-</button>
+            <input type="text" value="0" class="quantity" readonly>
+            <button class="plus">+</button>
+            </div>
+          </div>
+
+          <div class="spl-item" data-price="100">
+            <img src="img/brownie.jpg" >
+            <div class="item-info">
+              <h3>Brownie with Ice Cream - ₹100</h3>
+              <p>Warm, fudgy brownie topped with a scoop of vanilla ice cream.</p>
+            </div>
+            <div class="cart-controls1">
+            <button class="minus">-</button>
+            <input type="text" value="0" class="quantity" readonly>
+            <button class="plus">+</button>
+            </div>
+          </div>
+
+          <div class="spl-item" data-price="110">
+            <img src="img/lasangna.jpg" >
+            <div class="item-info">
+              <h3>Lasagna - ₹110 <span class="new">NEW</span></h3>
+              <p> Layers of pasta, cheese, and rich sauce baked golden.</p>
+            </div>
+            <div class="cart-controls1">
+            <button class="minus">-</button>
+            <input type="text" value="0" class="quantity" readonly>
+            <button class="plus">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-image">
+          <div class="image-frame">
+            <img src="img/spl1.jpg" alt="Starter Dish">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menu-section"> 
+    <div class="menu-controls">
+    <input type="text" id="keywordFilter" placeholder="Search for dishes..." class="search-bar">
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Starters">Starters & Soups</option>
+        <option value="Breakfast">Breakfast</option>
+        <option value="Rice">Rice Varieties</option>
+        <option value="Gravy">Breads & Gravies</option>
+        <option value="Fast-food">Burgers & Sandwiches</option>
+        <option value="Chats">Chats</option>
+        <option value="Drinks">Drinks</option>
+        <option value="Desserts">Desserts</option>
+    </select>
+    <select id="sortPrice" placeholder="sort by price">
+        <option value="default">Sort by Price</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+    </select>
+</div>
+
+
+    <section id="Starters" class="starters-section">
+      <h2>★ Starters & Soups ★</h2>
+    </section>
+    <div class="menu-grid1">
+      <div class="menu-item" data-category="Starters" data-keywords="sweet corn soup veg light" data-price="75">
+      <img src="img/cornsoup.jpg">
+      <h3>Sweet & corn soup</h3>
+      <p>Classic comforting soup with sweet corn & light seasoning</p>
+      <div class="menu-footer">
+        <span class="price">₹75</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="menu-item" data-category="Starters" data-keywords="tomato basil soup creamy" data-price="80">
+      <img src="img/tomatosoup.jpg">
+      <h3>Tomato basil soup</h3>
+      <p>A rich, creamy tomato soup infused with fresh basil</p>
+      <div class="menu-footer">
+        <span class="price">₹80</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="menu-item" data-category="Starters" data-keywords="hot sour soup spicy tangy veg" data-price="80">
+      <img src="img/hot_and_sour_soup.jpg">
+      <h3>Hot & sour soup</h3>
+      <p>Spicy, tangy soup with vegetables & bold flavors</p>
+      <div class="menu-footer">
+        <span class="price">₹80</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="Starters" data-keywords="paneer tikka grilled spices" data-price="95">
+      <img src="img/paneertikka.jpg">
+      <h3>Paneer tikka</h3>
+      <p>Juicy paneer cubes marinated with spices & grilled to perfection</p>
+      <div class="menu-footer">
+        <span class="price">₹95</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="Starters" data-keywords="veg spring roll vegetables crispy" data-price="95">
+      <img src="img/vegroll.jpg">
+      <h3>Veg spring roll</h3>
+      <p>Crispy golden rolls stuffed with seasoned vegetables</p>
+      <div class="menu-footer">
+        <span class="price">₹95</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+      </div>
+    <div class="menu-item" data-category="Starters" data-keywords="chicken wings bbq spicy" data-price="250">
+      <img src="img/chicken_wings.jpg">
+      <h3>Chicken Wings</h3>
+      <p>Spicy BBQ glazed chicken wings</p>
+      <div class="menu-footer">
+        <span class="price">₹250</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item" data-category="Starters" data-keywords="french fries potato crispy" data-price="70">
+      <img src="img/french_fries.jpg">
+      <h3>French Fries</h3>
+      <p>Golden crispy potato fries</p>
+      <div class="menu-footer">
+        <span class="price">₹70</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item" data-category="Starters" data-keywords="hara bhara kabab spinach peas" data-price="250">
+      <img src="img/harabharakebab.jpg">
+      <h3>Hara Bhara Kabab</h3>
+      <p>Spinach & peas patties</p>
+      <div class="menu-footer">
+        <span class="price">₹250</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+</div>
+<section id="Breakfast" class="breakfast-section">
+  <h2>★ South Indian Tiffin / Breakfast ★</h2>
+</section>
+<div class="menu-grid2">
+
+  <div class="menu-item" data-category="Breakfast" data-keywords="idli steamed rice cakes chutney sambar" data-price="60">
+    <img src="img/idli.jpg" alt="Idli">
+    <h3>Idli (2 pcs)</h3>
+    <p>Soft steamed rice cakes served with chutney & sambar</p>
+    <div class="menu-footer">
+      <span class="price">₹60</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Breakfast" data-keywords="masala dosa crispy potato filling" data-price="80">
+    <img src="img/dosa.jpg" alt="Dosa">
+    <h3>Masala Dosa</h3>
+    <p>Crispy dosa stuffed with spiced potato filling</p>
+    <div class="menu-footer">
+      <span class="price">₹80</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Breakfast" data-keywords="poori masala potato curry deep fried" data-price="70">
+    <img src="img/poori.jpg" alt="Poori">
+    <h3>Poori with Masala</h3>
+    <p>Fluffy deep-fried bread with potato curry</p>
+    <div class="menu-footer">
+      <span class="price">₹70</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Breakfast" data-keywords="pongal rice lentil traditional" data-price="65">
+    <img src="img/pongal.jpg" alt="Pongal">
+    <h3>Ven Pongal</h3>
+    <p>Traditional South Indian rice & lentil dish</p>
+    <div class="menu-footer">
+      <span class="price">₹65</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Breakfast" data-keywords="upma semolina porridge veggies ghee" data-price="55">
+    <img src="img/upma.jpg" alt="Upma">
+    <h3>Rava Upma</h3>
+    <p>Semolina porridge cooked with veggies & ghee</p>
+    <div class="menu-footer">
+      <span class="price">₹55</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item"  data-category="Breakfast" data-keywords="appam stew soft hoppers vegetable" data-price="90">
+    <img src="img/appam.jpg" alt="Appam">
+    <h3>Appam with Stew</h3>
+    <p>Soft hoppers served with vegetable stew</p>
+    <div class="menu-footer">
+      <span class="price">₹90</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Breakfast" data-keywords="medu vada lentil doughnuts chutney sambar" data-price="50">
+    <img src="img/vada.jpg" alt="Medu Vada">
+    <h3>Medu Vada (2 pcs)</h3>
+    <p>Crispy fried lentil doughnuts with chutney & sambar</p>
+    <div class="menu-footer">
+      <span class="price">₹50</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Dessert" data-keywords="rava kesari sweet semolina ghee saffron" data-price="45">
+    <img src="img/rava_kesari.jpg" alt="Kesari">
+    <h3>Rava Kesari</h3>
+    <p>Sweet semolina dessert with ghee & saffron</p>
+    <div class="menu-footer">
+      <span class="price">₹45</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="RiceVarieties" class="RiceVarieties-section">
+      <h2>★ Rice Varieties ★</h2>
+    </section>
+    <div class="menu-grid3">
+      <div class="menu-item" data-category="Rice" data-keywords="veg biryani mixed vegetables fragrant rice" data-price="250">
+      <img src="img/veg biryani.jpg">
+      <h3>Veg Biryani</h3>
+      <p>Fragrant rice with mixed vegetables</p>
+      <div class="menu-footer">
+        <span class="price">₹250</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="menu-item" data-category="Rice" data-keywords="chicken biryani hyderabadi rice tender chicken" data-price="320">
+      <img src="img/Chicken Biryani.jpg">
+      <h3>Chicken Biryani</h3>
+      <p>Hyderabadi-style biryani with tender chicken</p>
+      <div class="menu-footer">
+        <span class="price">₹320</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="menu-item"  data-category="Rice" data-keywords="mutton biryani aromatic rice lamb" data-price="420">
+      <img src="img/Mutton Biryani.jpg">
+      <h3>Mutton Biryani</h3>
+      <p>Rich and aromatic biryani with lamb</p>
+      <div class="menu-footer">
+        <span class="price">₹420</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="Rice" data-keywords="egg fried rice chinese egg vegetables" data-price="220">
+      <img src="img/Egg Fried Rice.jpg">
+      <h3>Egg Fried Rice</h3>
+      <p>Chinese-style fried rice with egg & veggies</p>
+      <div class="menu-footer">
+        <span class="price">₹220</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="Rice" data-keywords="veg fried rice indo-chinese vegetables" data-price="200">
+      <img src="img/Veg Fried Rice.jpg">
+      <h3>Veg Fried Rice</h3>
+      <p>Indo-Chinese rice with mixed vegetables</p>
+      <div class="menu-footer">
+        <span class="price">₹200</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+      </div>
+    <div class="menu-item" data-category="Rice" data-keywords="jeera rice steamed cumin seeds" data-price="150">
+      <img src="img/Jeera Fried Rice.jpg">
+      <h3>Jeera Rice</h3>
+      <p>Steamed rice flavored with cumin seeds</p>
+      <div class="menu-footer">
+        <span class="price">₹150</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item"  data-category="Rice" data-keywords="curd rice south indian comfort yogurt seasoning" data-price="120">
+      <img src="img/Curd Rice.jpg">
+      <h3>Curd Rice</h3>
+      <p>South Indian comfort food, rice mixed with curd & seasoning</p>
+      <div class="menu-footer">
+        <span class="price">₹120</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item" data-category="Rice" data-keywords="tomato rice spicy south indian" data-price="160">
+      <img src="img/tomato rice.jpg">
+      <h3>Tomato Rice</h3>
+      <p>Spicy South Indian tomato-flavored rice</p>
+      <div class="menu-footer">
+        <span class="price">₹160</span>
+        <div class="cart-controls">
+           <button class="minus">-</button>
+           <input type="text" value="0" class="quantity" readonly>
+           <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    <section id="gravy" class="gravy-section">
+  <h2> ★ Indian bread & Gravies ★</h2>
+</section>
+
+<div class="menu-grid4">
+
+  <div class="menu-item" data-category="Gravy" data-keywords="butter naan soft fluffy indian bread" data-price="45">
+    <img src="img/butter_naan.jpg" alt="Butter Naan">
+    <h3>Butter Naan</h3>
+    <p>Soft, fluffy Indian bread brushed with rich butter.</p>
+    <div class="menu-footer">
+      <span class="price">₹45</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Gravy" data-keywords="garlic naan tandoor-baked indian bread roasted garlic" data-price="45">
+    <img src="img/garlic_naan.jpg" alt="Garlic Naan">
+    <h3>Garlic Naan</h3>
+    <p>Tandoor-baked naan infused with roasted garlic flavor.</p>
+    <div class="menu-footer">
+      <span class="price">₹45</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Gravy" data-keywords="lachha paratha flaky layered indian bread" data-price="90">
+    <img src="img/Lachha Paratha.jpg" alt="Lachha Paratha">
+    <h3>Lachha Paratha</h3>
+    <p>Flaky, layered Indian paratha</p>
+    <div class="menu-footer">
+      <span class="price">₹90</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Gravy" data-keywords="tandoori roti whole wheat bread clay oven" data-price="40">
+    <img src="img/tandoori roti.jpg" alt="Tandoori Roti">
+    <h3>Tandoori Roti</h3>
+    <p>Whole wheat bread cooked in clay oven</p>
+    <div class="menu-footer">
+      <span class="price">₹40</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Gravy" data-keywords="kadai paneer spicy capsicum onion masala" data-price="250">
+    <img src="img/kadai_paneer.jpg" alt="Kadai Paneer Gravy">
+    <h3>Kadai Paneer Gravy</h3>
+    <p>Spicy paneer tossed with capsicum and onions in kadai masala.</p>
+    <div class="menu-footer">
+      <span class="price">₹250</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Gravy" data-keywords="dal makhani black lentils butter cream slow-cooked" data-price="150">
+    <img src="img/dal makhani.jpg" alt="Dal Makhani">
+    <h3>Dal Makhani</h3>
+    <p>Slow-cooked black lentils with butter & cream</p>
+    <div class="menu-footer">
+      <span class="price">₹150</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Gravy" data-keywords="chicken curry north indian onion tomato" data-price="250">
+    <img src="img/chicken curry.jpg" alt="Chicken Curry">
+    <h3>Chicken Curry</h3>
+    <p>North Indian style onion-tomato chicken gravy</p>
+    <div class="menu-footer">
+      <span class="price">₹250</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Gravy" data-keywords="mutton rogan josh kashmiri lamb curry" data-price="400">
+    <img src="img/mutton rogan josh.jpg" alt="Mutton Rogan Josh">
+    <h3>Mutton Rogan Josh</h3>
+    <p>Kashmiri-style rich lamb curry</p>
+    <div class="menu-footer">
+      <span class="price">₹400</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+   <section id="Fast-food" class="fast_food_section">
+  <h2>★ Burgers & Sandwiches ★</h2>
+</section>
+
+<div class="menu-grid5">
+
+  <div class="menu-item" data-category="Fast-food" data-keywords="chicken zinger burger crispy juicy fillet veggies spicy mayo" data-price="75">
+    <img src="img/zinger_burger.jpg" alt="Chicken Zinger Burger">
+    <h3>Chicken Zinger Burger</h3>
+    <p>Crispy, juicy chicken fillet with fresh veggies and spicy mayo.</p>
+    <div class="menu-footer">
+      <span class="price">₹75</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Fast-food" data-keywords="paneer tikka burger spiced patty mint mayo" data-price="150">
+    <img src="img/panner buger.jpg" alt="Paneer Tikka Burger">
+    <h3>Paneer Tikka Burger</h3>
+    <p>Spiced paneer patty with mint mayo</p>
+    <div class="menu-footer">
+      <span class="price">₹150</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Fast-food" data-keywords="chicken burger crispy fillet mayo lettuce" data-price="175">
+    <img src="img/chicken burger.jpg" alt="Chicken Burger">
+    <h3>Chicken Burger</h3>
+    <p>Crispy chicken fillet with mayo & lettuce</p>
+    <div class="menu-footer">
+      <span class="price">₹175</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Fast-food" data-keywords="maharaja veg burger double veg patties cheese sauces" data-price="75">
+    <img src="img/maharaja_burger.jpg" alt="Maharaja Veg Burger">
+    <h3>Maharaja Veg Burger</h3>
+    <p>A royal treat with double veg patties, cheese, and rich sauces.</p>
+    <div class="menu-footer">
+      <span class="price">₹75</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Fast-food" data-keywords="grilled cheese sandwich melted cheese golden bread" data-price="75">
+    <img src="img/cheese_sandwich.jpg" alt="Grilled Cheese Sandwich">
+    <h3>Grilled Cheese Sandwich</h3>
+    <p>Gooey melted cheese layered between golden grilled bread.</p>
+    <div class="menu-footer">
+      <span class="price">₹75</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Fast-food" data-keywords="veg club sandwich triple-layer fresh veggies" data-price="100">
+    <img src="img/veg sandwish.jpg" alt="Veg Club Sandwich">
+    <h3>Veg Club Sandwich</h3>
+    <p>Triple-layer sandwich with fresh veggies</p>
+    <div class="menu-footer">
+      <span class="price">₹100</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Fast-food" data-keywords="paneer tikka sandwich grilled bread melted cheese" data-price="175">
+    <img src="img/paneer_tikka_sandwich.jpg" alt="Paneer Tikka Sandwich">
+    <h3>Paneer Tikka Sandwich</h3>
+    <p>Gooey melted cheese layered between golden grilled bread.</p>
+    <div class="menu-footer">
+      <span class="price">₹175</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Fast-food" data-keywords="chicken tandoori sandwich smoky chunks mayo" data-price="195">
+    <img src="img/chicken sandwish.jpg" alt="Chicken Tandoori Sandwich">
+    <h3>Chicken Tandoori Sandwich</h3>
+    <p>Smoky chicken chunks with mayo.</p>
+    <div class="menu-footer">
+      <span class="price">₹195</span>
+      <div class="cart-controls">
+         <button class="minus">-</button>
+         <input type="text" value="0" class="quantity" readonly>
+         <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+     <section id="chats" class="chat-section">
+  <h2>★ Chats ★</h2>
+</section>
+
+<div class="menu-grid6">
+
+  <div class="menu-item" data-category="Chats" data-keywords="samosa crispy golden pastry potato" data-price="40">
+    <img src="img/samosa.jpg" alt="Samosa">
+    <h3>Samosa</h3>
+    <p>Crispy golden pastry filled with spicy potato goodness.</p>
+    <div class="menu-footer">
+      <span class="price">₹40</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Chats" data-keywords="bhel puri tangy puffed rice chutneys sev" data-price="60">
+    <img src="img/bhel_puri.jpg" alt="Bhel Puri">
+    <h3>Bhel Puri</h3>
+    <p>A tangy mix of puffed rice, chutneys, and crunchy sev.</p>
+    <div class="menu-footer">
+      <span class="price">₹60</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Chats" data-keywords="pani puri hollow puris spicy tangy water" data-price="50">
+    <img src="img/pani_puri.jpg" alt="Pani Puri">
+    <h3>Pani Puri</h3>
+    <p>Hollow puris bursting with spicy, tangy flavored water.</p>
+    <div class="menu-footer">
+      <span class="price">₹50</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Chats" data-keywords="pav bhaji butter toasted pav spicy mashed vegetable curry" data-price="80">
+    <img src="img/pav_bhaji.jpg" alt="Pav Bhaji">
+    <h3>Pav Bhaji</h3>
+    <p>Butter-toasted pav served with spicy mashed vegetable curry.</p>
+    <div class="menu-footer">
+      <span class="price">₹80</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Chats" data-keywords="dahi puri crispy puris yogurt chutneys sev" data-price="70">
+    <img src="img/dahi-puri.jpg" alt="Dahi Puri">
+    <h3>Dahi Puri</h3>
+    <p>Crispy puris topped with yogurt, chutneys, and sev.</p>
+    <div class="menu-footer">
+      <span class="price">₹70</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Chats" data-keywords="aloo tikki chaat crispy potato patties chutneys curd" data-price="170">
+    <img src="img/Aloo Tikki Chaat.jpg" alt="Aloo Tikki Chaat">
+    <h3>Aloo Tikki Chaat</h3>
+    <p>Crispy potato patties topped with chutneys & curd.</p>
+    <div class="menu-footer">
+      <span class="price">₹170</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Chats" data-keywords="sev puri crispy puris potatoes chutneys sev" data-price="100">
+    <img src="img/sev puri.jpg" alt="Sev Puri">
+    <h3>Sev Puri</h3>
+    <p>Crispy puris topped with potatoes, chutneys & sev</p>
+    <div class="menu-footer">
+      <span class="price">₹100</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Chats" data-keywords="ragda pattice white peas curry potato patties sev chutneys" data-price="170">
+    <img src="img/Ragda Pattice.jpg" alt="Ragda Pattice">
+    <h3>Ragda Pattice</h3>
+    <p>White peas curry with potato patties, topped with sev & chutneys.</p>
+    <div class="menu-footer">
+      <span class="price">₹170</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <section id="drinks" class="drinks-section">
+  <h2>★ Drinks ★</h2>
+</section>
+
+<div class="menu-grid7">
+
+  <div class="menu-item" data-category="Drinks" data-keywords="mango lassi yogurt sweet mangoes" data-price="75">
+    <img src="img/mango_lassi.jpg" alt="Mango Lassi">
+    <h3>Mango Lassi</h3>
+    <p>Thick, creamy yogurt drink blended with sweet ripe mangoes.</p>
+    <div class="menu-footer">
+      <span class="price">₹75</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Drinks" data-keywords="fresh lime soda sweet salty lemon" data-price="95">
+    <img src="img/lemon juice.jpg" alt="Fresh Lime Soda">
+    <h3>Fresh Lime Soda</h3>
+    <p>Sweet / salty soda with lemon.</p>
+    <div class="menu-footer">
+      <span class="price">₹95</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Drinks" data-keywords="coffee hot aromatic brewed" data-price="55">
+    <img src="img/coffee.jpg" alt="Coffee">
+    <h3>Coffee</h3>
+    <p>Hot and aromatic, brewed to kick-start your day.</p>
+    <div class="menu-footer">
+      <span class="price">₹55</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Drinks" data-keywords="iced latte chilled espresso milk summer refreshment" data-price="75">
+    <img src="img/iced_latte.jpg" alt="Iced Latte">
+    <h3>Iced Latte</h3>
+    <p>Chilled espresso with smooth milk, perfect for summer refreshment.</p>
+    <div class="menu-footer">
+      <span class="price">₹75</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Drinks" data-keywords="masala tea spiced chai bold flavors aroma" data-price="25">
+    <img src="img/masala_tea.jpg" alt="Masala Tea">
+    <h3>Masala Tea</h3>
+    <p>Spiced Indian chai with bold flavors and a soothing aroma.</p>
+    <div class="menu-footer">
+      <span class="price">₹25</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Drinks" data-keywords="soft drinks coke sprite pepsi" data-price="60">
+    <img src="img/coca cola.jpg" alt="Soft Drinks">
+    <h3>Soft Drinks</h3>
+    <p>(Coke / Sprite / Pepsi).</p>
+    <div class="menu-footer">
+      <span class="price">₹60</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Drinks" data-keywords="strawberry milkshake creamy fruit shake" data-price="175">
+    <img src="img/Strawberry Milkshake.jpg" alt="Strawberry Milkshake">
+    <h3>Strawberry Milkshake</h3>
+    <p>Creamy fruit shake</p>
+    <div class="menu-footer">
+      <span class="price">₹175</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Drinks" data-keywords="mineral water 1L" data-price="40">
+    <img src="img/Water.jpg" alt="Mineral Water">
+    <h3>Mineral Water</h3>
+    <p>(1L)</p>
+    <div class="menu-footer">
+      <span class="price">₹40</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <section id="Desserts" class="desserts-section">
+  <h2>★ Desserts ★</h2>
+</section>
+
+<div class="menu-grid8">
+  
+  <div class="menu-item" data-category="Desserts" data-keywords="chocolate cake rich" data-price="120">
+    <img src="img/lava cake.jpg" alt="Chocolate Cake">
+    <h3>Chocolate Lava Cake</h3>
+    <p>Warm chocolate cake with a gooey molten center</p>
+    <div class="menu-footer">
+      <span class="price">₹120</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+ <div class="menu-item" data-category="Chats" data-keywords="samosa crispy golden pastry potato" data-price="40">
+    <img src="img/ice cream.jpg" alt="Samosa">
+    <h3>Ice Cream Sundae</h3>
+    <p>A sweet and creamy dessert made with scoops of ice cream topped with syrup, nuts, fruits, and whipped cream.</p>
+    <div class="menu-footer">
+      <span class="price">₹40</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+   <div class="menu-item" data-category="Chats" data-keywords="samosa crispy golden pastry potato" data-price="40">
+    <img src="img/moose.jpeg" alt="Samosa">
+    <h3>Chocolate Mousse</h3>
+    <p> Light and airy dessert made with rich whipped chocolate.</p>
+    <div class="menu-footer">
+      <span class="price">₹40</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Desserts" data-keywords="brownie chocolate" data-price="110">
+    <img src="img/brownie.jpg" alt="Brownie">
+    <h3>Fudge Brownie</h3>
+    <p>Dense chocolate brownie topped with walnuts</p>
+    <div class="menu-footer">
+      <span class="price">₹110</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Desserts" data-keywords="cheesecake berry" data-price="150">
+    <img src="img/cheesecake.jpg" alt="Cheesecake">
+    <h3>New York Cheesecake</h3>
+    <p>Classic creamy cheesecake with berry topping</p>
+    <div class="menu-footer">
+      <span class="price">₹150</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Desserts" data-keywords="gulab jamun indian sweet" data-price="70">
+    <img src="img/gulab_jamun.jpg" alt="Gulab Jamun">
+    <h3>Gulab Jamun</h3>
+    <p>Soft fried milk dumplings soaked in sugar syrup</p>
+    <div class="menu-footer">
+      <span class="price">₹70</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Chats" data-keywords="samosa crispy golden pastry potato" data-price="40">
+    <img src="img/rasamalai.jpg" alt="Samosa">
+    <h3>Rasmalai </h3>
+    <p>Soft paneer dumplings soaked in sweet saffron milk.</p>
+    <div class="menu-footer">
+      <span class="price">₹40</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item" data-category="Desserts" data-keywords="kulfi indian icecream" data-price="85">
+    <img src="img/kulfi.jpg" alt="Kulfi">
+    <h3>Kulfi</h3>
+    <p>Traditional Indian frozen dessert made with thickened milk</p>
+    <div class="menu-footer">
+      <span class="price">₹85</span>
+      <div class="cart-controls">
+        <button class="minus">-</button>
+        <input type="text" value="0" class="quantity" readonly>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="combo-section">
+  <h1>★ Our Special Combos ★</h1>
+  <div class="combo-block" data-price="199">
+    <div class="combo-img">
+      <img src="img/combo image.jpg" alt="Burger and Fries">
+    </div> 
+    <div class="combo-text">
+      <h3> Chicken Burger + Fries + Coke </h3>
+      <p><em>“Burgers don’t lie! Add some fries and Coke, and boom – happiness in a tray.”</em></p>
+      <div class="menu-footer">
+        <span class="price">₹199</span>
+        <div class="cart-controls">
+          <button class="minus">-</button>
+          <input type="text" value="0" class="quantity" readonly>
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="combo-block" data-price="299">
+    <div class="combo-img">
+      <img src="img/menucombo8.jpg" alt="Biryani Combo">
+    </div> 
+    <div class="combo-text">
+      <h3> Chicken/Mutton Biryani + Rice + Sweet</h3>
+      <p><em>“From the royal aroma of Biryani, the wok-tossed charm of Fried Rice, the saucy delight of Pasta, to the sweet ending of desserts”</em></p>
+      <div class="menu-footer">
+        <span class="price">₹299</span>
+        <div class="cart-controls">
+          <button class="minus">-</button>
+          <input type="text" value="0" class="quantity" readonly>
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="combo-block" data-price="220">
+    <div class="combo-img">
+      <img src="img/menucombo11.jpg" alt="Pasta Combo">
+    </div> 
+    <div class="combo-text">
+      <h3> Alfredo/Arrabiata Pasta + Garlic Bread + Soft Drink</h3>
+      <p><em>“Cheesy, saucy, garlicky – this combo makes you say ‘Mamma Mia!’ every single bite.”</em></p>
+      <div class="menu-footer">
+        <span class="price">₹220</span>
+        <div class="cart-controls">
+          <button class="minus">-</button>
+          <input type="text" value="0" class="quantity" readonly>
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="cart-button">
+  <button id="viewCartBtn">
+    🛒 View Cart (<span id="cartSubtotal"> ₹0 </span>)
+  </button>
+</div>
+<div class="askai-button">
+  <button id="askAIBtn">💬 Ask AI</button>
+</div>
+
+<div id="cartModal" class="cart-modal" style="display:none;">
+  <div class="cart-content">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <p><strong>Total: <span id="cartTotal">₹0</span></strong></p>
+
+    
+    <form id="orderForm" method="POST" action="save_order.php">
+      <input type="hidden" name="orderData" id="orderData">
+      <button type="submit" id="payment">Proceed to payment</button>
+    </form>
+
+    <button id="closeCart">Close</button>
+  </div>
+</div>
+<div id="askAIModal" class="askai-modal" style="display:none;">
+  <div class="askai-chatbox">
+    <div class="askai-header">
+      <h3>🍽️ Savor AI Assistant</h3>
+      <button id="closeAI">✖</button>
+    </div>
+
+    <div id="chatWindow" class="chat-window">
+      <div class="ai-msg">Hi! 👋 I'm your dining assistant. How can I help you today?</div>
+    </div>
+
+    <div class="suggestions">
+      <button class="suggestion">What’s the best dish?</button>
+      <button class="suggestion">Do you have vegetarian items?</button>
+      <button class="suggestion">What are today’s specials?</button>
+      <button class="suggestion">How can I place an order?</button>
+    </div>
+
+    <div class="askai-input">
+      <input type="text" id="aiInput" placeholder="Ask something..." />
+      <button id="sendAI">Send</button>
+    </div>
+  </div>
+</div>
+
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <h3>Savor & Nest</h3>
+    <p>A taste of perfection in every dish - fine dining with a modern twist.</p>
+
+    <div class="footer-links">
+      <a href="index.html#Home">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#services">Services</a>
+      <a href="menu.html">Menu</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#blog">Blog</a>
+      <a href="index.html#testimonial">Testimonial</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <p class="copyright">© 2025 Savor & Nest. All rights reserved.</p>
+  </div>
+</footer>
+
+</section>
+
+<script>
+  const tableNumber = localStorage.getItem("tableNumber") || "0";
+
+  
+  function getTableNumber() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("table");
+  }
+  const containers=document.querySelectorAll('[class^="menu-grid"]');
+  const categoryFilter=document.getElementById('categoryFilter');
+  const keywordFilter=document.getElementById('keywordFilter');
+  const sortPrice=document.getElementById('sortPrice');
+
+  function filterAndSort(){
+    const categoryValue=categoryFilter.value;
+    const keywordValue=keywordFilter.value.toLowerCase();
+    const sortValue=sortPrice.value;
+    
+    containers.forEach(container =>{
+      const items=Array.from(container.querySelectorAll('.menu-item'));
+
+      let filtered=items.filter(item => {
+        const categoryMatch = categoryValue === 'all' || item.dataset.category === categoryValue;
+        const keywordMatch =! keywordValue || item.dataset.keywords.toLowerCase().includes(keywordValue);
+        return categoryMatch && keywordMatch;
+      })
+      if(sortValue === 'low'){
+        filtered.sort((a,b) => parseInt(a.dataset.price)-parseInt(b.dataset.price));
+      }else if(sortValue === 'high'){
+        filtered.sort((a,b) => parseInt(b.dataset.price)- parseInt(a.dataset.price));
+      }
+      items.forEach(item => item.style.display='none');
+      filtered.forEach(item => {
+        item.style.display='block';
+        container.appendChild(item);
+      });
+    });
+  }
+  categoryFilter.addEventListener('change',filterAndSort);
+  keywordFilter.addEventListener('input',filterAndSort);
+  sortPrice.addEventListener('change',filterAndSort);
+
+ 
+
+  document.addEventListener('DOMContentLoaded', () => {
+    let cart = {};
+    let cartSubtotal = 0;
+
+    document.querySelectorAll(".menu-item,.spl-item,.combo-block").forEach(item => {
+      const qtyInput = item.querySelector(".quantity");
+      const plusBtn = item.querySelector(".plus");
+      const minusBtn = item.querySelector(".minus");
+      const price = parseFloat(item.dataset.price);
+      const name = item.querySelector("h3").innerText;
+      const imgSrc = item.querySelector("img").src;
+
+      plusBtn.addEventListener("click", () => {
+        let qty = Number(qtyInput.value) || 0;
+        qty++;
+        qtyInput.value = qty;
+
+        if (!cart[name]) {
+          cart[name] = { price: price, qty: 0, img: imgSrc };
+        }
+        cart[name].qty++;
+        cartSubtotal += price;
+
+        updateCart();
+      });
+
+      minusBtn.addEventListener("click", () => {
+        let qty = Number(qtyInput.value) || 0;
+        if (qty > 0) {
+          qty--;
+          qtyInput.value = qty;
+
+          cart[name].qty--;
+          if (cart[name].qty === 0) {
+            delete cart[name];
+          }
+          cartSubtotal -= price;
+
+          updateCart();
+        }
+      });
+    });
+
+
+    function updateCart() {
+      document.getElementById("cartSubtotal").innerText = "₹" + cartSubtotal.toFixed(2);
+
+      let cartList = document.getElementById("cartItems");
+      cartList.innerHTML = "";
+
+      for (let item in cart) {
+        let li = document.createElement("li");
+        li.innerHTML = `
+          <img src="${cart[item].img}" alt="${item}" 
+               style="width:50px; height:50px; border-radius:50%; margin-right:10px; object-fit:cover;">
+          <span>${item} x${cart[item].qty}</span>
+          <span style="margin-left:auto;">₹${(cart[item].price * cart[item].qty).toFixed(2)}</span>
+        `;
+        li.style.display = "flex";
+        li.style.alignItems = "center";
+        li.style.justifyContent = "space-between";
+        cartList.appendChild(li);
+      }
+
+      document.getElementById("cartTotal").innerText = "₹" + cartSubtotal.toFixed(2);
+    }
+
+    document.getElementById("viewCartBtn").addEventListener("click", () => {
+      document.getElementById("cartModal").style.display = "flex";
+    });
+
+    document.getElementById("closeCart").addEventListener("click", () => {
+      document.getElementById("cartModal").style.display = "none";
+    });
+    
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      if (Object.keys(cart).length === 0) {
+        alert("Your cart is empty!");
+        e.preventDefault();
+        return;
+      }
+
+      let orderArray = [];
+      for (let item in cart) {
+        orderArray.push({
+          name: item,
+          qty: cart[item].qty,
+          price: cart[item].price,
+          img: cart[item].img
+        });
+      }
+
+      let finalOrder = {
+        table: tableNumber || "0",  
+        items: orderArray
+      };
+
+      document.getElementById("orderData").value = JSON.stringify(finalOrder);
+    });
+  });
+  //AI
+  
+const askBtn = document.getElementById("askAIBtn"),
+      aiModal = document.getElementById("askAIModal"),
+      closeAI = document.getElementById("closeAI"),
+      chatWindow = document.getElementById("chatWindow"),
+      aiInput = document.getElementById("aiInput"),
+      sendBtn = document.getElementById("sendAI");
+
+
+askBtn.onclick = () => aiModal.style.display = "flex";
+closeAI.onclick = () => aiModal.style.display = "none";
+
+function appendMessage(text, sender) {
+  const msg = document.createElement("div");
+  msg.className = sender === "ai" ? "ai-msg" : "user-msg";
+  msg.textContent = text;
+  chatWindow.appendChild(msg);
+  chatWindow.scrollTop = chatWindow.scrollHeight;
+}
+
+function getAIReply(text) {
+  text = text.toLowerCase();
+  const responses = {
+    best: "I recommend the Chicken Zinger Burger and Hyderabadi Dum Biryani! ",
+    recommend: "Our top dishes: Paneer Tikka Sandwich & Brownie with Ice Cream ",
+    veg: "We have great vegetarian choices like Paneer Tikka Sandwich and Pav Bhaji .",
+    special: "Today's specials are Grilled Lamb Chops and Chocolate Lava Cake .",
+    order: "Add items to cart → View Cart → Proceed to Payment 💳.",
+    dessert: "Try Brownie with Ice Cream or Chocolate Lava Cake .",
+    hi: "Hey there  I'm Savor AI! Ask me about dishes, offers, or your order!",
+    hello: "Hello How can I assist your dining experience today?"
+  };
+  for (const key in responses) if (text.includes(key)) return responses[key];
+  return "Hmm, I’m not sure about that — but I’ll find out for you! 🤔";
+}
+function handleUserInput() {
+  const text = aiInput.value.trim();
+  if (!text) return;
+  appendMessage(text, "user");
+  aiInput.value = "";
+  setTimeout(() => appendMessage(getAIReply(text), "ai"), 600);
+}
+sendBtn.onclick = handleUserInput;
+aiInput.addEventListener("keypress", e => e.key === "Enter" && handleUserInput());
+
+document.querySelectorAll(".suggestion").forEach(btn => {
+  btn.onclick = () => {
+    const q = btn.innerText;
+    appendMessage(q, "user");
+    setTimeout(() => {
+      const responses = {
+        dish: "Our signature dish is Chicken Zinger Burger 🍔.",
+        vegetarian: "Yes! We serve many vegetarian options 🥦.",
+        specials: "Today's specials are Paneer Butter Masala & Brownie Sundae 🍨.",
+        order: "Add your items → View Cart → Proceed to Payment 💳."
+      };
+      const key = Object.keys(responses).find(k => q.toLowerCase().includes(k)) || "";
+      appendMessage(responses[key] || "Let me check that for you! 🤖", "ai");
+    }, 500);
+  };
+});
+
+
+</script>
+
+
+</body>
+</html>
